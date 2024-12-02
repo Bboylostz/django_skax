@@ -1,0 +1,143 @@
+body {
+    background-image: url('https://avatars.mds.yandex.net/i?id=a7a9bc2c02dd1254da35db797dd8f29e_l-11387523-images-thumbs&n=13');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    width: 80%; /* Уменьшит ширину карусели до 80% от родительского элемента */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.card {
+    
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    
+    padding: 1rem;
+}
+
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+.hover-effect {
+    transition: transform 0.2s;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000 !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show {
+    color: #007bff !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000 !important;
+}
+.content-push {
+    padding-top: 56px; /* Высота навигации + 16px (по умолчанию) */
+}
+.content-push1 {
+    padding-top: 76px; /* Высота навигации + 16px (по умолчанию) */
+}
+#carouselExampleAutoplaying {
+    filter: drop-shadow(0 0 20px rgba(248, 249, 250, 0.5));
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  @keyframes glow {
+    0% { box-shadow: 0 0 20px rgba(248, 249, 250, 10); }
+    50% { box-shadow: 0 0 40px rgba(255, 255, 255, 10); }
+    100% { box-shadow: 0 0 20px rgba(248, 249, 250, 10); }
+  }
+  
+  #carouselExampleAutoplaying {
+    animation: glow 2s infinite;
+    filter: drop-shadow(0 0 20px rgba(248, 249, 250, 0.5));
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .footer {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    color: #333;
+  }
+
+  .footer h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  .footer ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer .fab {
+    font-size: 24px;
+    color: #007bff;
+  }
+
+  .footer form {
+    display: flex;
+  }
+
+  .footer input[type="email"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .footer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+
+  .footer button:hover {
+    background-color: #0056b3;
+  }
